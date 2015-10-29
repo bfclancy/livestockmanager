@@ -4,11 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/viewCattle.jsp</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/src/java/data/LivestockManagerDB.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/addAnimal.jsp</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/searchAnimal.jsp</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/index.xhtml</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/index.xhtml</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/web/addAnimal.jsp</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/LivestockManager/src/java/data/LivestockManagerDB.java</file>
         </group>
     </open-files>
 </project-private>
