@@ -27,7 +27,7 @@ import org.json.JSONObject;
 @WebServlet(name = "ViewAllAnimals", urlPatterns = {"/ViewAllAnimals"})
 public class ViewAllAnimals extends HttpServlet {
 
-    String url = "viewCattle.jsp";
+    String url = "";
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -39,23 +39,23 @@ public class ViewAllAnimals extends HttpServlet {
         
         ArrayList<Animal> animals = new ArrayList<>();
         
-//        try {
-//            //LivestockManagerDB.openConnection();
-//            //animals = LivestockManagerDB.getAllAnimals();
-//            //json.put("animals", new JSONArray(animals));
-//            //LivestockManagerDB.closeConnection();
-//            url = "/viewCattle.jsp";
-//            
-//        }catch (SQLException sqlx) {
-//            System.out.println(sqlx);
-//             url = "/error.jsp";
-//        } catch (ClassNotFoundException cnfe) {
-//            System.out.println(cnfe);
-//            url = "/error.jsp";
-//        }catch (NullPointerException npe) {
-//            System.out.println(npe);
-//            url = "/error.jsp";
-//        }
+        try {
+            LivestockManagerDB.openConnection();
+            animals = LivestockManagerDB.getAllAnimals();
+            json.put("animals", new JSONArray(animals));
+            LivestockManagerDB.closeConnection();
+            url = "/viewCattle.jsp";
+            
+        }catch (SQLException sqlx) {
+            System.out.println(sqlx);
+             url = "/error.jsp";
+        } catch (ClassNotFoundException cnfe) {
+            System.out.println(cnfe);
+            url = "/error.jsp";
+        }catch (NullPointerException npe) {
+            System.out.println(npe);
+            url = "/error.jsp";
+        }
         
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         request.setAttribute("animals", animals);

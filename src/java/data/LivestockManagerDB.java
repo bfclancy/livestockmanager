@@ -27,7 +27,7 @@ public class LivestockManagerDB {
     public static void openConnection() throws ClassNotFoundException, SQLException {
         
         Class.forName("com.mysql.jdbc.Driver");
-        connection = DriverManager.getConnection("jdbc:mysql://livestockmanager.cif2sijmaqli.us-west-2.rds.amazonaws.com:3306/livestockmanager", "livestockmanager", "livestockpassword");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/livestockmanager", "root", "");
         statement = connection.createStatement();
     }
     
