@@ -22,8 +22,8 @@
     <ul>
       <li class="first"><a href="#" accesskey="1">Home</a></li>
       <li><a href="#" accesskey="2">Livestock</a></li>
-      <li><a href="/ViewAllAnimals" accesskey="3">View Animals</a></li>
-      <li><a href="/searchAnimal.jsp">Search for animal</a></li>
+      <li><a href="ViewAllAnimals" accesskey="3">View Animals</a></li>
+      <li><a href="searchAnimal.jsp">Search for animal</a></li>
       <li><a href="#" accesskey="3">Accounts</a></li>
       <li><a href="#" accesskey="3">Veterinarian</a></li>
       <li><a href="#" accesskey="3">Dosing</a></li>
